@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--24. Write a menu driven program to calculate the area of a given object.-->
+<html>
+    <head>
+        <title>
+            Area
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        class Area{
+            constructor(){}
+            circle(){
+                let r=Number(prompt("Enter radius"))
+                console.log("Area of circle with radius "+r+" is "+(r*r*3.14))
+            }
+            square(){
+                let a=Number(prompt("Enter side"))
+                console.log("Area of square with side "+a+" is "+(a*a))
+            }
+            rectangle(){
+                let a=Number(prompt("Enter height"))
+                let b=Number(prompt("Enter width"))
+                console.log("Area of square with height "+a+" & width "+b+" is "+(a*b))
+            }
+            triangle(){
+                let a=Number(prompt("Enter height"))
+                let b=Number(prompt("Enter base"))
+                console.log("Area of square with height "+a+" & base "+b+" is "+(.5*a*b))
+            }
+        }
+        class MyClass extends Area{
+            constructor(){
+                super();
+                let choice=Number(prompt("Enter choice\n1.Circle\n2.Square\n3.Rectangle\n4.Triangle"))
+                let a=new Area();
+                switch(choice){
+                    case 1:{
+                        a.circle();
+                        break;
+                    }
+                    case 2:{
+                        a.square();
+                        break;
+                    }
+                    case 3:{
+                        a.rectangle();
+                        break;
+                    }
+                    case 4:{
+                        a.triangle();
+                        break;
+                    }
+                    default:{
+                        break;
+                    }
+                }
+            }
+        }
+        mainFn=new MyClass
+        </script>
+</html>

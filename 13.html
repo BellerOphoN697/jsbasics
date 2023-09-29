@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--13. Write a program to identify whether a string is a palindrome or not-->
+<html>
+    <head>
+        <title>
+            palindrome
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=mainFn();
+        function mainFn(){
+            const string=prompt("Enter string")
+            console.log("entered string: "+string)
+            length=string.length
+            flag=0
+            for(var i=0;i<length/2;i++){
+                if(string[i]!==string[length-1-i]){
+                    console.log("Entered string is not a palindrome")
+                    flag=1
+                    break
+                }
+            }
+            if(flag===0){
+                console.log("Entered string is a palindrome")
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Write a program to sort an array in descending order-->
+<html>
+    <head>
+        <title>
+            Array Sorting
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        let arr=[], count=0,i,j
+        window.onload=arrRead();
+        function arrRead(){
+            const n=prompt("Enter Size")
+            console.log("entered array")
+            for(i=0;i<n;i++){
+                arr[i]=(prompt("Enter the values of Array"))
+                console.log(arr[i])
+            }
+            for(i=0;i<n;i++){
+                for(j=i+1;j<n;j++){
+                    if(arr[i]<arr[j]){
+                        var temp=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                    }
+                }
+            }
+            console.log("\nSorterd array")
+            for(i=0;i<n;i++){
+                console.log(arr[i]+"\n")
+            }
+            }
+    </script>
+</html>

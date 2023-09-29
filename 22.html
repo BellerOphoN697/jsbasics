@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--22. Write a program to add the values of two 2D arrays-->
+<html>
+    <head>
+        <title>
+            2d array
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            let n=Number(prompt("Enter size of arrays"))
+            let a=[],b=[],c=[]
+            getArray(a,b,c,n);
+        }
+        function getArray(a,b,c,n){
+            for(i=0;i<n;i++){
+                a.push([])
+                for(j=0;j<n;j++){
+                    a[i][j]=Number(prompt("Enter the values of array 1"))
+                }
+            }
+            for(i=0;i<n;i++){
+                b.push([])
+                for(j=0;j<n;j++){
+                    b[i][j]=Number(prompt("Enter the values of array 2"))
+                }
+            }
+            addArray(a,b,c,n);
+        }
+        function addArray(a,b,c,n){
+            for(i=0;i<n;i++){
+                c.push([])
+                for(j=0;j<n;j++){
+                    c[i][j]=a[i][j]+b[i][j]
+                }
+            }
+            displayArray(a,b,c,n);
+        }
+        function displayArray(a,b,c,n){
+            console.log("Entered array 1:")
+            console.table(a)
+            console.log("Entered array 2:")
+            console.table(b)
+            console.log("Sum of 2 arrays is:")
+            console.table(c)
+        }
+    </script>
+</html>

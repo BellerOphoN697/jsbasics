@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--4. Write a program to check whether a student has passed or failed in a subject after he    or she enters their mark (pass mark for a subject is 50 out of 100).-->
+<html>
+    <head>
+        <title>
+            Marks
+        </title>
+    </head>
+    <body>
+        <input type="text" id="mark" placeholder="enter mark">
+        <button onclick="Mark()">View Result</button>
+        <p id="result"></p>
+    </body>
+    <script>
+        function Mark(){
+            var mark=parseFloat(document.getElementById("mark").value)
+            if(mark<50){
+                document.getElementById("result").innerHTML="Failed"
+            }
+            else{
+                document.getElementById("result").innerHTML="Pass"
+            }
+        }
+    </script>
+</html>

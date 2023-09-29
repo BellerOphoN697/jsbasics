@@ -1,0 +1,26 @@
+<!---18. Grades are computed using a weighted average. Suppose that the written test counts 70%,  lab exams 20% and assignments 10%.--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grades
+        </title>
+    </head>
+    <body>
+        Enter the marks scored by the students<br>
+        <input type="text" id="wt" placeholder="Written test"><br>
+        <input type="text" id="le" placeholder="Lab exams"><br>
+        <input type="text" id="as" placeholder="Assignments"><br>
+        <button onclick="grade()">Calculate Grade</button><br>
+        <p id="gr"></p>
+    </body>
+    <script>
+        function grade(){
+            var wt=parseInt(document.getElementById("wt").value)
+            var le=parseInt(document.getElementById("le").value)
+            var as=parseInt(document.getElementById("as").value)
+            var gr=(wt*70)/100+(le*20)/100+(as*10)/100;
+            document.getElementById("gr").innerHTML="Grade of the student is "+gr
+        }
+    </script>
+</html>

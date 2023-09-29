@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--7. Write a program to print the multiplication table of given numbers -->
+<html>
+    <head>
+        <title>
+            multiplication table
+        </title>
+    </head>
+    <body>
+        <input type="text" id="entry" placeholder="Enter number">
+        <button onclick="multiplication()">Submit</button>
+        <p id="result"></p>
+    </body>
+    <script>
+        function multiplication(){
+            var number=parseInt(document.getElementById("entry").value)
+            let table='';
+            for (var index = 1; index <= 10; index++) {
+                table+=(index+" x "+number+" = "+index*number+"<br>")  
+            }
+            document.getElementById("result").innerHTML=table
+        }
+    </script>
+</html>

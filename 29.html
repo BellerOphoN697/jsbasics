@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--29.  Write a myFilter function that takes 2 parameters: myArray and callback.-->
+<html>
+    <head>
+        <title>
+            callback
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        //myArray=[1,2,3,4,5]
+        myArray=[],arr=""
+        n=Number(prompt("enter size"))
+        console.log("Entered elements")
+        for(i=0;i<n;i++){
+            myArray[i]=Number(prompt("enter elements"))
+            arr+=myArray[i]+"\t"
+        }
+        console.log(arr)
+        let sum=0;
+        myFilter(myArray,callbackFn);
+        function myFilter(myArray,callback){
+            callbackFn(myArray);
+            console.log("Sum = "+sum)
+        }
+        function callbackFn(myArray){
+            myArray.forEach(element => {
+                sum+=element;                
+                if(sum%2===0){
+                    return true
+                }
+                else{
+                    return false
+                }
+            });
+        }
+        </script>
+</html>

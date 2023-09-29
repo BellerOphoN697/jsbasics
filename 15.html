@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--15. Write a program to accept an array and display it on the console using functions-->
+<html>
+    <head>
+        <title>
+            array functions
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            let n=Number(prompt("Enter size of array"))
+            getArray(n);
+        }
+        function getArray(n){
+            let a=[]
+            for(i=0;i<n;i++){
+                    a[i]=Number(prompt("Enter the values of array 1"))
+            }
+            displayArray(a,n);
+        }
+        function displayArray(a,n){
+            console.log("Entered array :")
+            for(i=0;i<n;i++){
+                console.log(a[i]+"\n")
+            }
+        }
+    </script>
+</html>

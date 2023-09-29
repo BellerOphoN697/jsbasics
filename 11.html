@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 11. Write a program to find the number of even numbers in an array-->
+<html>
+    <head>
+        <title>
+            Even numbers
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        let arr=[], count=0
+        window.onload=arrRead();
+        function arrRead(){
+            const n=prompt("Enter Size")
+            for(i=0;i<n;i++){
+                arr[i]=(prompt("Enter the values of Array"))
+                console.log(arr[i])
+                if(arr[i]%2===0){
+                    count++
+                }
+            }
+            console.log("\nNumber of even numbers in the given array is "+count)
+            }
+    </script>
+</html>

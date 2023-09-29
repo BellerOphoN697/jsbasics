@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- 28. Create a constructor function that satisfies the following conditions-->
+<html>
+    <head>
+        <title>
+            constructor
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        class Car{
+            constructor(){
+                this.name=prompt("Enter car name")
+                this.mileage=Number(prompt("Enter mileage"))
+                this.max_speed=Number(prompt("Enter max speed"))
+            }
+        }
+        const details=new Car();
+        console.log("Name: "+details.name+"\nMileage: "+details.mileage+"\nMax Speed: "+details.max_speed)  
+    </script>
+</html>

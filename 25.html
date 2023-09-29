@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--25. Write a Javascript program to display the status (I.e. display book name, author name & reading status) of books.-->
+<html>
+    <head>
+        <title>
+            Book status
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            var library=[
+                {
+                    title:"The Road Ahead",
+                    author: "Bill Gates",
+                    readingStatus: true
+                },
+                {
+                    title:"Steve Jobs",
+                    author: "Walter Isaacson",
+                    readingStatus: true
+                },
+                {
+                    title:"Mockingjay: The Final Book of The Hunger Games",
+                    author: "Suzanne Collins",
+                    readingStatus: false
+                }
+            ]
+            var status=""
+            library.forEach(statusCheck);
+            function statusCheck(item){
+                if(item.readingStatus){
+                    status+="Already read "+item.title+" by "+item.author+"\n"
+                }
+                else
+                {
+                    status+="You still need to read "+item.title+" by "+item.author+"\n"
+                }
+            }
+            alert(status)
+        }
+    </script>
+</html>

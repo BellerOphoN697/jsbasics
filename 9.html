@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 9. Write a program to print the following pattern (hint: use nested loop)-->
+<html>
+    <head>
+        <title>
+            Pattern
+        </title>
+    </head>
+    <body>
+        <input type="text" id="entry" placeholder="Enter number">
+        <button onclick="callFunction()">Submit</button>
+        <p id="result"></p>
+    </body>
+    <script>
+        function callFunction(){
+            let n, result="",i,j
+            n=parseInt(document.getElementById("entry").value)
+            for(i=1;i<=n;i++){
+                for(j=1;j<=i;j++){
+                    result+=j+" "
+                }
+                result+="<br>"
+            }
+            document.getElementById("result").innerHTML=result
+        }
+    </script>
+</html>

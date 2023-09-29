@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--23. Write an object oriented program to store and display the values of a 2D array-->
+<html>
+    <head>
+        <title>
+            2d array
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            let n=Number(prompt("Enter size of arrays"))
+            let a=[]
+            getArray(a,n);
+        }
+        function getArray(a,n){
+            for(i=0;i<n;i++){
+                a.push([])
+                for(j=0;j<n;j++){
+                    a[i][j]=Number(prompt("Enter the values of array 1"))
+                }
+            }
+            displayArray(a,n);
+        }
+        function displayArray(a,n){
+            var result=""
+            console.log("Array elements are:")
+            for(i=0;i<n;i++){
+                for(j=0;j<n;j++){
+                    result+=a[i][j]+"\t"
+                }
+                result+="\n"
+            }
+            console.log(result)
+        }
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<!--2. Accept two inputs from the user and output their sum.--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sum
+        </title>
+    </head>
+    <body>
+        <input id="num1" type="text" placeholder="enter num1">
+        <input type="text" id="num2" placeholder="enter num2">
+        <button onclick="findSum()">Click me</button>
+        <p id="sum"></p>  
+    </body>
+    <script>
+        function findSum(){
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseFloat(document.getElementById("num2").value);
+            var sum=num1+num2
+            document.getElementById("sum").innerHTML="Sum is "+sum
+        }
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--26. Given a variable named my_string, try reversing the string using  my_string.split().reverse().join()-->
+<html>
+    <head>
+        <title>
+            Split reverse join
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            //var my_string=(prompt("Enter String"))
+            my_string=["1234",Number(1234)]
+            my_string.forEach(reverseString);
+            function reverseString(item){
+                console.log(item)
+                try{
+                    item=item.split("").reverse().join("");
+                    console.log("Reversed string is : "+item)
+                }
+                catch (err){
+                    console.log("Error : "+err.message)
+                }
+                finally{
+                    console.log("Type of my_string is : "+typeof item)
+                }
+            }
+        }
+    </script>
+</html>

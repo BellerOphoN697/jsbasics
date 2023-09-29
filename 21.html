@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--21. Write a program to multiply the adjacent values of an array and store it in an another array-->
+<html>
+    <head>
+        <title>
+            Adjacent values
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            let n=Number(prompt("Enter number of elements"))
+            let a=[],b=[],i,alog="",blog=""
+            
+            for(i=0;i<n;i++){
+                a[i]=Number(prompt("Enter value"))
+                alog+=(a[i]+"\t")
+
+            }
+            for(i=0;i<n-1;i++){
+                b[i]=a[i]*a[i+1]
+                blog+=(b[i]+"\t")
+            }
+            console.log("Entered array: "+alog)
+            console.log("Output = "+blog)
+        }
+    </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--10. Write a program to interchange the values of two arrays.-->
+<html>
+    <head>
+        <title>
+            Array swap
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        let arr1=[], arr2=[]
+        window.onload=arrRead();
+        function arrRead(){
+            const n=prompt("Enter Size")
+            for(i=0;i<n;i++){
+                arr1[i]=(prompt("Enter the values of Array 1"))
+            }
+            for(i=0;i<n;i++){
+                arr2[i]=(prompt("Enter the values of Array 2"))
+            }
+            arr3=arr1
+            arr1=arr2
+            arr2=arr3
+            console.log("\nArrays after swapping:")
+            console.log("\nArray 1: \n")
+            for(i=0;i<n;i++){
+                console.log(arr1[i]+"\n")
+            }
+            console.log("\nArray 2: \n")
+            for(i=0;i<n;i++){
+                console.log(arr2[i]+"\n")
+            }
+        }
+    </script>
+</html>

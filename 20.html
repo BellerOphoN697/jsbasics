@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--20. Write a program to print the following pattern using for loop-->
+<html>
+    <head>
+        <title>
+            Pattern
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            let n=Number(prompt("Enter number of rows"))
+            let num=1
+            var pattern=""
+            for(i=0;i<n+1;i++){
+                for(j=0;j<i;j++){
+                    pattern+=(num+" ")
+                    num++;
+                }
+                pattern+=("\n")
+            }
+            console.log("Entered row size = "+n,pattern)
+        }
+    </script>
+</html>

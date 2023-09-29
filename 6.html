@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 6. Using the ‘switch case’ write a program to accept an input number from the user and output the day as follows. -->
+<html>
+    <head>
+        <title>
+            Weekdays
+        </title>
+    </head>
+    <body>
+        <input type="text" id="entry" placeholder="Enter week number">
+        <button onclick="weeks()">Submit</button>
+        <p id="result"></p>
+    </body>
+    <script>
+        function weeks(){
+            var number=parseInt(document.getElementById("entry").value)
+            switch (number) {
+                case 1:{
+                    document.getElementById("result").innerHTML="Sunday"
+                    break;
+                }
+                case 2:{
+                    document.getElementById("result").innerHTML="Monday"
+                    break;
+                }
+                case 3:{
+                    document.getElementById("result").innerHTML="Tuesday"
+                    break;
+                }
+                case 4:{
+                    document.getElementById("result").innerHTML="Wednesday"
+                    break;
+                }
+                case 5:{
+                    document.getElementById("result").innerHTML="Thursday"
+                    break;
+                }
+                case 6:{
+                    document.getElementById("result").innerHTML="Friday"
+                    break;
+                }
+                case 7:{
+                    document.getElementById("result").innerHTML="Saturday"
+                    break;
+                }
+                default:{
+                    document.getElementById("result").innerHTML="Invalid Entry"
+                    break;
+                }
+            }
+        }
+    </script>
+</html>

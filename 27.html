@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 27. Given a variable named userHeight, you must throw errors under the following-->
+<html>
+    <head>
+        <title>
+            throws
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=main();
+        function main(){
+            var userHeight=Number(prompt("Enter Height"))
+            console.log(userHeight)
+            if(userHeight==="Nan"){
+                throw new Error(console.log("notANumberError"))
+            }
+            else if(userHeight>200){
+                throw new Error(console.log("HugeHeightError"));
+            }
+            else if(userHeight<40){
+                throw new Error(console.log("TinyHeightError"))
+            }
+            else{
+                console.log("Valid")
+            }
+        }
+    </script>
+</html>

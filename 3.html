@@ -1,0 +1,25 @@
+<!---3. Write a program to find the simple interest.--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple Interest
+        </title>
+    </head>
+    <body>
+        <input type="text" id="p" placeholder="enter principle amount">
+        <input type="text" id="r" placeholder="enter rate of interest">
+        <input type="text" id="n" placeholder="enter number of years">
+        <button onclick="simpleInterest()">Calculate interest</button>
+        <p id="si"></p>
+    </body>
+    <script>
+        function simpleInterest(){
+            var p=parseInt(document.getElementById("p").value)
+            var r=parseFloat(document.getElementById("r").value)
+            var n=parseFloat(document.getElementById("n").value)
+            var si=(p*n*r)/100;
+            document.getElementById("si").innerHTML="Simple interest is "+si
+        }
+    </script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 14. Write a program to add to two dimensional array-->
+<html>
+    <head>
+        <title>
+            2d array
+        </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        window.onload=mainFn();
+        function mainFn(){
+            let n=Number(prompt("Enter size of arrays"))
+            let a=[],b=[],c=[]
+            for(i=0;i<n;i++){
+                a.push([])
+                for(j=0;j<n;j++){
+                    a[i][j]=Number(prompt("Enter the values of array 1"))
+                }
+            }
+            for(i=0;i<n;i++){
+                b.push([])
+                for(j=0;j<n;j++){
+                    b[i][j]=Number(prompt("Enter the values of array 2"))
+                }
+            }
+            for(i=0;i<n;i++){
+                c.push([])
+                for(j=0;j<n;j++){
+                    c[i][j]=a[i][j]+b[i][j]
+                }
+            }
+            console.log("Entered array 1:")
+            console.table(a)
+            console.log("Entered array 2:")
+            console.table(b)
+            console.log("Sum of 2 arrays is:")
+            console.table(c)
+        }
+    </script>
+</html>
