@@ -7,11 +7,10 @@
         </title>
     </head>
     <body>
-        <input id="char"  type="text" placeholder="Enter text">
-        <button  onclick="charFn()">Click here</button>
         <script>
+            window.onload=charFn()
             function charFn() {
-                const char=document.getElementById("char").value;
+                const char=prompt("Enter text")
                 console.log(char);
             }            
         </script>
