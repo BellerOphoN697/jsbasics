@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            generate
+        </title>
+
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        function* f1(i){
+            yield i;
+            yield* f2(i);
+
+
+            
+            
+        }
+        function* f2(i){
+            yield i+1
+            yield i+2
+        }
+        fun=f1(1);
+        console.log(fun.next().value)
+        console.log(fun.next().value)
+        console.log(fun.next().value)
+        console.log(fun.next().value)
+        console.log(fun.next().value)
+
+    </script>
+</html>

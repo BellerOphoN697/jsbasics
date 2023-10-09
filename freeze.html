@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            freeze
+        </title>
+
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        const ob={
+            i:10,
+            j:11
+        }
+        const o1=Object.seal(ob)
+        o1.i=111;
+        o1.k=19;
+        console.log(o1.i)
+        console.log(o1.k)
+
+    </script>
+</html>
