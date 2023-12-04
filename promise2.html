@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <script>
+            let num=10
+            function pro(){
+                return new Promise((res,rej)=>{
+                    if(num%2==0){
+                        res("Even")
+                    }
+                    else{
+                        rej("Odd")
+                    }
+                })
+            }
+            pro(num).then(even).catch(odd)
+            function even(value){
+                console.log(value)
+            }
+            function odd(value){
+                console.log(value)
+            }
+        </script>
+    </body>
+</html>
